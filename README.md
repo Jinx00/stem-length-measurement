@@ -23,12 +23,10 @@ cd stem-length-measurement
 
 
 ## Overall Pipeline
-The core functionality of this repository focuses on stem length measurement, which relies on high-quality stem instance segmentation results. Therefore, before running the measurement code, you need to first segment the raw plant point clouds using PSegNet. PSegNet is a deep learning network specifically designed for plant point clouds, capable of performing both semantic segmentation (distinguishing stems from leaves) and instance segmentation (distinguishing individual leaves).
+Our workflow comprises of the stage of 3D organ instance segmentation clouds and the stage of shape-adaptive stem length measurement. 
 
-The official code and pre-trained models for PSegNet can be found in the following repository:
+The core functionality of this repository focuses on stem length measurement, which relies on high-quality stem instance segmentation results in the stage of 3D organ instance segmentation clouds. Here we use the PSegNet, which is a deep learning network specifically designed for plant point clouds, capable of performing both semantic segmentation (distinguishing stems from leaves) and instance segmentation (distinguishing individual leaves). The official code and pre-trained models for PSegNet can be found in the following repository:
 https://github.com/Huang2002200/PlantNet-and-PSegNet/
-
-Our workflow comprises of the stage of 3D organ instance segmentation clouds and the stage of shape-adaptive stem length measurement.
 
 ## Script Descriptions
 The following scripts are included in this repository, and they should be executed in order.
